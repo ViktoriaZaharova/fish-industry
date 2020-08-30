@@ -1,0 +1,684 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  -webkit-font-smoothing: antialiased
+  background: #effdfe
+  color: #173562
+
+html, body
+  overflow-x: hidden
+  height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+.wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.content
+  flex: 1 0 auto
+
+footer
+  flex: 0 0 auto
+
+a
+  outline: none
+  text-decoration: none
+  transition: .3s ease
+  &:hover, &:focus
+    text-decoration: none
+
+button
+  padding: 0
+  border: none
+  outline: none
+  box-sizing: border-box
+  cursor: pointer
+  transition: .3s ease
+
+.container
+  max-width: 1270px
+  width: 100%
+  padding: 0 30px
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+
+.logo
+  max-width: 143px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 74px
+  width: 100%
+
+.btn-accent
+  font-size: 25px
+  font-weight: 500
+  text-transform: uppercase
+  color: #fff
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15)
+  border-radius: 30px
+  background: #6EB3BF
+  max-width: 427px
+  &:hover
+    background: #173562
+
+.btn-blue
+  max-width: 549px
+  height: 76px
+  background: #071D29
+  border-radius: 30px
+  color: #fff
+  text-transform: uppercase
+  font-size: 25px
+  font-weight: 600
+  &:hover
+    background: $accent
+
+h1
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35)
+  font-size: 50px
+  font-weight: bold
+  color: #fff
+  max-width: 707px
+  width: 100%
+  text-align: right
+  margin: 0 0 50px
+
+h3
+  font-size: 36px
+  font-weight: 600
+
+.title
+  font-size: 55px
+  font-weight: 500
+  color: #071D29
+  text-align: center
+  width: 100%
+
+input
+  outline: none
+  padding: 0
+  box-sizing: border-box
+  border: 1px solid #071D29
+    radius: 30px
+  font-family: $default-font
+  text-align: center
+  height: 76px
+  width: 100%
+  background: transparent
+  color: #C7C7C7
+  font-size: 25px
+  &::placeholder
+    color: #C7C7C7
+
+label
+  margin: 0 auto 40px
+  max-width: 408px
+  width: 100%
+  display: block
+
+
+//header
+header
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 3
+  padding: 21px 0 22px
+  .container
+    align-items: center
+    justify-content: space-between
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 auto
+  li
+    margin: 0 58px 0 0
+    a
+      font-size: 30px
+      font-weight: 500
+      color: #fff
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25)
+      &:hover
+        color: $accent
+
+.header-box
+  display: flex
+  flex-direction: column
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25)
+
+.links
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25)
+  font-size: 28px
+  border-bottom: 2.35913px solid #FFFFFF
+  color: #fff
+  &:hover
+    color: $accent
+
+.phone
+  font-size: 30px
+  font-weight: 500
+  color: #fff
+
+//main-home
+.main-home
+  background: url("../img/header.png") no-repeat center top
+    size: cover
+  padding: 330px 0 341px
+  .container
+    flex-direction: column
+    align-items: flex-end
+
+
+//advantages
+.advantages
+  padding: 256px 0 65px
+
+.advantages-box
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  font-size: 28px
+  margin: 0 0 70px
+  h3
+    margin: 0 0 9px
+  &:nth-child(even)
+    .advantages-box__content
+      order: -1
+      padding: 0 55px 0 0
+
+.advantages-box__img
+  width: 647px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.advantages-box__content
+  width: calc(100% - 647px)
+  padding: 0 0 0 55px
+
+//about
+.about
+  padding: 100px 0 135px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%,0)
+    width: 206px
+    height: 15px
+    background: url("../img/figure.svg") no-repeat center
+      size: contain
+  .container
+    align-items: center
+    justify-content: center
+
+.about-number
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-size: 48px
+  color: #071D29
+
+.about-content
+  max-width: 428px
+  width: 100%
+  margin: 0 0 0 78px
+  font-size: 28px
+  color: #071D29
+  h3
+    font-size: 36px
+
+//footer
+footer
+  background: #182D40
+  padding: 38px 0 15px
+  color: #fff
+  font-size: 23px
+  font-weight: 300
+  .container
+    justify-content: space-between
+  .menu
+    max-width: 313px
+    width: 100%
+    display: block
+    column-count: 2
+    margin: 0
+
+    li
+      margin: 0 0 8px
+      a
+        text-shadow: none
+        font-size: 25px
+        font-weight: 300
+  .phone
+    font-size: 23px
+    font-weight: 300
+    text-shadow: none
+  .links
+    border-bottom: 1px solid #FFFFFF
+    font-size: 23px
+    font-weight: 300
+    text-shadow: none
+  .logo
+    max-width: 93px
+
+.mail
+  color: #fff
+  font-size: 23px
+  font-weight: 300
+  margin: 0 0 10px
+
+.footer-box-info
+  max-width: 360px
+  width: 100%
+
+.modal__div
+  position: fixed
+  max-width: 1130px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+  .modal__wrapper
+    background: #EFFDFE
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+    padding: 44px 140px 84px
+    box-sizing: border-box
+    position: relative
+    h2
+      text-align: center
+
+.modal__close
+  position: absolute
+  width: 60px
+  height: 60px
+  cursor: pointer
+  right: 21px
+  top: 18px
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: #000000
+    width: 60px
+    height: 1px
+    top: 27px
+  &:before
+    transform: rotate(135deg)
+  &:after
+    transform: rotate(45deg)
+
+
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  -moz-opacity: 0.8
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.form
+  button
+    margin: 4px auto 0
+
+.description-modal
+  margin: 0 auto 65px
+  text-align: center
+  font-size: 35px
+
+.mobile-menu
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 10
+  height: 100%
+  background: #6EB3BF
+  padding: 70px 34px
+  display: none
+  overflow-y: auto
+  .menu
+    flex-direction: column
+    align-items: flex-end
+    li
+      margin: 0 0 55px
+      a
+        font-size: 38px
+        font-weight: 500
+        text-shadow: none
+        &:hover
+          color: #182D40
+
+.btn-close
+  position: absolute
+  width: 38px
+  height: 38px
+  cursor: pointer
+  left: 20px
+  top: 7px
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: #fff
+    width: 100%
+    height: 2px
+    top: 17px
+  &:before
+    transform: rotate(135deg)
+  &:after
+    transform: rotate(45deg)
+
+.btn-burger
+  display: none
+  flex-direction: column
+  align-items: flex-end
+  justify-content: space-between
+  width: 49px
+  height: 33px
+  cursor: pointer
+  span
+    width: 100%
+    height: 2px
+    background: #fff
+    &:nth-child(2)
+      width: 36px
+    &:last-child
+      width: 20px
+
+//main-page
+.main-page
+  padding: 238px 0 100px
+  background: url("../img/header 2.png") no-repeat center bottom
+    size: cover
+
+.title-page
+  font-size: 55px
+  text-shadow: none
+  margin: 0 auto
+  text-align: center
+  position: relative
+  color: #071D29
+  font-weight: bold
+  padding: 0 0 40px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translate(-50%, 0)
+    width: 206px
+    height: 15px
+    background: url("../img/figure.svg") no-repeat center
+      size: contain
+
+//catalog
+.catalog
+  padding: 86px 0 34px
+
+.product-card
+  margin: 0 0 109px
+  width: 300px
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+  border-radius: 15px
+  background: #C9E4EF
+  border: 1px solid #ABC2CB
+  overflow: hidden
+
+.product-card__img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 333px
+  background: linear-gradient(180deg, #F4FCFF 0%, #FCFEFF 100%)
+  padding: 15px 30px
+  border-bottom: 1px solid #1D7B8A
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: contain
+
+
+.product-card__body
+  padding: 12px 17px 7px
+
+.product-name
+  color: #000000
+  font-size: 19px
+  height: 50px
+  overflow: hidden
+  margin: 0 0 25px
+
+.line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  color: #757575
+  font-weight: 300
+
+.d-flex
+  display: flex
+  flex-wrap: wrap
+
+.justify-between
+  justify-content: space-between
+
+.justify-center
+  justify-content: center
+
+.justify-end
+  justify-content: flex-end
+
+.row
+  margin: 0 -30px
+  display: flex
+  flex-wrap: wrap
+
+.col-30
+  padding: 0 30px
+  width: 33.333333%
+  display: flex
+
+//faq
+.faq
+  position: relative
+  padding: 74px 0 0
+
+.faq-img-top
+  position: absolute
+  right: 0
+  width: 261px
+  top: -270px
+
+.faq-img
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 907px
+  margin: 0 auto
+  width: 100%
+
+.question-box
+  margin: 0 0 60px
+  color: #071D29
+  font-size: 35px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  &:last-child
+    margin: 0
+  h3
+    font-size: 45px
+    font-weight: 500
+    border-bottom: 2px solid #071D29
+    padding: 0 20px 0 0
+    margin: 0 0 10px
+
+//contacts
+.contacts
+  padding: 162px 0 0
+  position: relative
+  .container
+    flex-direction: column
+    align-items: center
+
+.contacts-img-top
+  position: absolute
+  right: 30px
+  top: -280px
+  max-width: 252px
+  width: 100%
+
+.contacts-box
+  max-width: 1052px
+  width: 100%
+  margin: 0 auto 48px
+  background: #D8E6E9
+  padding: 63px 88px 62px 88px
+  .mail
+    color: #071D29
+
+.contacts-box__icon
+  width: 67px
+  height: 67px
+  min-width: 67px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 27px 0 0
+
+.contacts-box__item
+  display: flex
+  align-items: center
+  font-size: 45px
+  margin: 0 0 45px
+  color: #071D29
+  &:last-child
+    margin: 0
+  a
+    color: #071D29
+
+
+.call-box__content
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.links-call
+  border-bottom: 3px solid #071D29
+
+.contacts-img
+  margin: 0 auto
+
+@import "media"
+// Всегда в конце
