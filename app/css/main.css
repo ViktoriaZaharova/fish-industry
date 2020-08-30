@@ -66,8 +66,7 @@ body {
   color: #173562; }
 
 html, body {
-  overflow-x: hidden;
-  height: 100%; }
+  overflow-x: hidden; }
 
 img {
   display: block;
