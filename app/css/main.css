@@ -286,7 +286,7 @@ header {
   color: #fff; }
 
 .main-home {
-  background: url("../img/header.png") no-repeat center top;
+  background: url("../img/header.png") no-repeat center bottom;
     background-size: cover;
   padding: 330px 0 341px; }
   .main-home .container {
