@@ -187,9 +187,12 @@ h1 {
   text-align: right;
   margin: 0 0 50px; }
 
-h3 {
+h3, .title-links {
   font-size: 36px;
   font-weight: 600; }
+
+.title-links {
+  color: #071D29; }
 
 .title {
   font-size: 55px;
@@ -315,7 +318,7 @@ header {
       flex-wrap: wrap;
   font-size: 28px;
   margin: 0 0 70px; }
-  .advantages-box h3 {
+  .advantages-box h3, .advantages-box .title-links {
     margin: 0 0 9px; }
   .advantages-box:nth-child(even) .advantages-box__content {
     -webkit-box-ordinal-group: 0;
@@ -860,8 +863,6 @@ footer {
     margin: 0 20px 0 0; }
     .menu li a {
       font-size: 20px; }
-  h3 {
-    font-size: 30px; }
   .advantages-box__content {
     padding: 0 0 0 30px; }
   .advantages-box:nth-child(even) .advantages-box__content {
@@ -869,7 +870,7 @@ footer {
   .advantages-box {
     font-size: 22px;
     margin: 0 0 54px; }
-  h3 {
+  h3, .title-links {
     font-size: 24px; }
   .advantages {
     padding: 80px 0 0; }
@@ -1039,7 +1040,7 @@ footer {
     width: 154px; }
   .advantages-box__content {
     width: calc(100% - 154px); }
-  h3 {
+  h3, .title-links {
     font-size: 18px; }
   .about {
     margin: 0;
@@ -1198,7 +1199,7 @@ footer {
     margin: 0 0 26px; }
     .advantages-box:nth-child(even) .advantages-box__content {
       padding: 0 15px 0 0; }
-  h3 {
+  h3, .title-links {
     font-size: 10px; }
   .advantages-box__content {
     padding: 0 0 0 15px; }
