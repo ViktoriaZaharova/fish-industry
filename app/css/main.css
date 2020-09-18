@@ -325,6 +325,8 @@ header {
         -ms-flex-order: -1;
             order: -1;
     padding: 0 55px 0 0; }
+  .advantages-box:hover .title-links {
+    color: #6EB3BF; }
 
 .advantages-box__img {
   width: 647px;
